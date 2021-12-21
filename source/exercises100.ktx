@@ -1,0 +1,45 @@
+< q1
+Create a store (★☆☆)
+
+< h1
+hint: from dol import ...
+
+< a1
+from dol import Store
+s = Store()
+s['my_key']=12
+
+< q2
+Show that a Store has strictly more attributes than a dict
+
+< h2
+Use set(dir(d))...
+
+< a2
+from dol import Store
+s = Store()
+s['my_key']=12
+d = dict()
+d['my_key']=12
+assert len(set(dir(s))-(set(dir(d))))>0
+assert len(set(dir(d))-(set(dir(s))))==0 
+
+< q3
+Get and set values for an existing key
+< h3
+Same as for a dict!
+
+< a3
+assert s['my_key']==12
+# set a value
+s['new_key']=[1,2,3]
+assert s['new_key']==[1,2,3]
+
+
+< q4
+Get all items of the store
+< h4
+Same as for a dict
+< a4
+assert list(s.items())==[('my_key', 12), ('other_key', 'abcde'), ('new_key', [1, 2, 3])]
+ 
