@@ -6,7 +6,7 @@
 This is a collection of exercises to help practicing with **dol**.
 
 
-The whole poject is inspired 
+The whole project is inspired 
 by the excellent  <https://github.com/rougier/numpy-100>.
 File automatically generated. See the documentation to update questions/answers/hints programmatically.
 
